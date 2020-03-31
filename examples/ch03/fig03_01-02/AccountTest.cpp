@@ -7,9 +7,11 @@
 using namespace std;
 
 int main() { 
+   string dummy;
    Account myAccount; // create Account object myAccount
 
    // show that the initial value of myAccount's name is the empty string
+   dummy = myAccount.getName();
    cout << "Initial account name is: " << myAccount.getName();
 
    // prompt for and read name
