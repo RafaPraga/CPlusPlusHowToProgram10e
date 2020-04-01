@@ -2,7 +2,7 @@
 // Compound-interest calculations with class DollarAmount and integers.
 #include <iostream>
 #include <iomanip>
-#include <string>
+//#include <string>
 #include "DollarAmount.h"
 using namespace std;
 
