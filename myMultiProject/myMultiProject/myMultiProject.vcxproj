@@ -138,6 +138,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\examples\ch05\fig05_07_08\DollarAmount.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\examples\ch05\fig05_07_08\Interest.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
