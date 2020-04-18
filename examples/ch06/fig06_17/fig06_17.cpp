@@ -4,7 +4,7 @@
 using namespace std;
 
 int squareByValue(int); // function prototype (value pass)           
-void squareByReference(int&); // function prototype (reference pass)
+void squareByReference(int); // function prototype (reference pass)
 
 int main() {
    int x{2}; // value to square using squareByValue
@@ -17,7 +17,7 @@ int main() {
    cout << "x = " << x << " after squareByValue\n" << endl;
 
    // demonstrate squareByReference
-   cout << "z = " << z << " before squareByReference" << endl;
+   cout << "z = " << z << ", &z = " << &z << " before squareByReference" << endl;
    squareByReference(z);
    cout << "z = " << z << " after squareByReference" << endl;
 }
@@ -30,7 +30,8 @@ int squareByValue(int number) {
 
 // squareByReference multiplies numberRef by itself and stores the result
 // in the variable to which numberRef refers in function main            
-void squareByReference(int& numberRef) {
+void squareByReference(int numberRef) {
+   cout << "\n\nValue of numberRef inside squareByReference is: " << numberRef << "\n" << endl;
    numberRef *= numberRef; // caller's argument modified                 
 }
 
